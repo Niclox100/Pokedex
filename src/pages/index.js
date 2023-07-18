@@ -91,8 +91,8 @@ function App() {
   
   return (
     <div>
-      <Col span={4} offset={10}>
-        <img src="https://raw.githubusercontent.com/musartedev/curso-redux/27298f5dd3e37caf2a90a7a82580cd2905fcab31/src/statics/logo.svg" alt="Pokedux" />
+      <Col style={{display:"flex", justifyContent:"center", alignItems:"center"}} span={4} offset={10}>
+        <img style={{width: "230px", }} src="https://raw.githubusercontent.com/musartedev/curso-redux/27298f5dd3e37caf2a90a7a82580cd2905fcab31/src/statics/logo.svg" alt="Pokedux" />
       </Col>
 
       {favoritePokemons.length > 0 && (
