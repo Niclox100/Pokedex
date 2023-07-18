@@ -41,9 +41,9 @@ const PokemonCard = ({ name, abilities, frontImageUrl, id }) => {
       cover={<img src={frontImageUrl} alt={name}></img>}
 		  extra={<StarButton isFavorite={isFavorite} onClick={()=> handleOnFavorite()}/>}
     >
-    <Meta style={{fontSize: 20, fontWeight:"bold"}} description="Abilities"/>
+    <Meta style={{fontSize: 20, fontWeight:"bold", color:"black"}} description="Abilities"/>
 		{abilities.map(ability=> {
-      return <Meta description={ability.ability.name} key={ability.ability.name}/>
+      return <Meta style={{color:"blueviolet"}} description={ability.ability.name} key={ability.ability.name}/>
     })}
     </Card>
   )
